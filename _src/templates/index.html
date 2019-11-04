@@ -2,16 +2,29 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Adalab Web Starter Kit</title>
-    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final evaluation</title>
+
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div class="page">
-      <partial src="_header.html" label="Header"></partial>
-      <partial src="_main.html" label="Main"></partial>
-      <partial src="_link.html" aClass="link__adalab" text="Adalab" url="https://adalab.es"></partial>
-      <partial src="_link.html" aClass="link__github" text="GitHub" url="https://github.com"></partial>
-    </div>
+    <header class="header">
+      Aqui va el header
+      <partial src="_header2.html"> </partial>
+    </header>
+    <main class="main">
+      <section class="tips">
+        Aqui va looking trough a window
+        <partial src="_tips.html"> </partial>
+      </section>
+      <section class="reasons">
+        Aqui va 3 reasons to purchase
+        <partial src="_reasons.html"> </partial>
+      </section>
+    </main>
+    <footer class="footer">
+      Aqui va el footer
+      <partial src="_footer.html"> </partial>
+    </footer>
   </body>
 </html>
