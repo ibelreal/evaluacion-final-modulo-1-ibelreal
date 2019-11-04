@@ -1,13 +1,14 @@
 .header {
   /* Position */
   position: fixed;
-
   &__btn {
     /* Sizing */
     width: 44px;
     height: 44px;
-    background-color: $header-color;
+    /* Flexbox */
     display: flex;
     justify-content: center;
+    /* Background styles */
+    background-color: $color-header;
   }
 }
