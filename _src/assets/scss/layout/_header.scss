@@ -1,0 +1,13 @@
+.header {
+  /* Position */
+  position: fixed;
+
+  &__btn {
+    /* Sizing */
+    width: 44px;
+    height: 44px;
+    background-color: $header-color;
+    display: flex;
+    justify-content: center;
+  }
+}

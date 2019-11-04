@@ -1,13 +1,11 @@
 .hero {
   /* Sizing */
   height: 100vh;
-
   /* Flexbox */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   /* Text styles */
   text-align: center;
   /* Background styles */
@@ -15,4 +13,5 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100% 100%;
 }
