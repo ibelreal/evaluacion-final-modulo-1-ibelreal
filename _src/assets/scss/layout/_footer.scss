@@ -1,0 +1,48 @@
+@import "../core/_variables.scss";
+
+.footer {
+  padding-left: 15px;
+  color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  &__button {
+    background-color: white;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    padding-top: 37px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: center;
+    &__list,
+    &__contact {
+      border: olive 2px solid;
+      display: inline-block;
+      list-style: none;
+    }
+    &__item {
+      color: $color-primary;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary;
+    &__love--heart {
+      color: $color-button;
+    }
+  }
+}
