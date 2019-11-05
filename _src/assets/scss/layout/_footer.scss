@@ -13,7 +13,7 @@
   &__button {
     bottom: 96%;
     left: 47%;
-    background-color: white;
+    background-color: $color-primary;
     height: 45px;
     width: 45px;
     border-radius: 45px;
@@ -58,7 +58,6 @@
     }
   }
   @media all and (min-width: 768px) {
-    border: red 2px solid;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
@@ -68,7 +67,7 @@
     &__menu {
       order: 2;
       padding-top: 15px;
-      border: red 2px solid;
+      padding-bottom: 45px;
       &__item {
         justify-content: flex-start;
       }
