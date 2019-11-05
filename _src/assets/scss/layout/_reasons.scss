@@ -13,6 +13,7 @@
     padding-bottom: 45px;
     font-size: $sizeTitle;
     text-transform: $upFirst;
+    font-family: $fontTitle;
     padding-top: 30px;
     font-weight: $bold;
   }
@@ -24,6 +25,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     &__title {
+      font-family: $fontTitle;
       width: 212px;
       text-align: center;
     }
