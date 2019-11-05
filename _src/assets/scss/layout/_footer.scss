@@ -5,6 +5,9 @@
   display: flex;
   flex-direction: column;
   text-transform: $upAll;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   &__button {
     background-color: white;
@@ -21,7 +24,6 @@
     font-size: $sizeFooter;
     flex-direction: column;
     padding-top: 37px;
-    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
 
@@ -37,7 +39,6 @@
       display: inline;
       display: flex;
       justify-content: center;
-      align-items: center;
     }
     &__link {
       color: $color-primary;

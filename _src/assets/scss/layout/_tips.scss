@@ -14,14 +14,16 @@
     line-height: 30px;
   }
   &__first {
+    display: flex;
+    flex-direction: column;
+
     &--title {
       text-transform: $upFirst;
       font-family: $fontTitle;
     }
     &--text {
-      width: 290px;
       font-size: $sizeText;
-      line-height: 1.67;
+      line-height: 30px;
       padding-top: 15px;
       color: $color-text;
     }
