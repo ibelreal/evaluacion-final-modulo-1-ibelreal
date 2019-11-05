@@ -1,5 +1,29 @@
+@import "../core/_variables.scss";
+
 .tips {
+  &__container {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
   &__title {
-    border: violet 3px solid;
+    text-transform: $upFirst;
+    color: $color-title;
+    font-size: $sizeSmall;
+    font-weight: $weightRegular;
+  }
+  &__first {
+  }
+  &__button {
+    margin: 30px 0 45px 0;
+    width: 76px;
+    height: 45px;
+    border-radius: 22.5px;
+    border: solid 2px $color-button;
+    color: $color-button;
+    text-transform: $upAll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

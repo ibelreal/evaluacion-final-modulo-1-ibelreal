@@ -1,6 +1,7 @@
+@import "../core/_variables.scss";
 .hero {
   /* Sizing */
-  height: 100vh;
+  height: 568px;
   /* Flexbox */
   display: flex;
   flex-direction: column;
@@ -14,4 +15,23 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
+  &__title {
+    margin-top: 284px;
+    color: $color-primary;
+    text-transform: $upAll;
+    font-size: $sizeHero;
+  }
+  &__text {
+    color: $color-primary;
+  }
+  &__button {
+    width: 45px;
+    height: 45px;
+    background-color: $color-primary;
+    border-radius: 22.5px;
+    display: flex;
+    margin-top: 45px;
+    justify-content: center;
+    align-items: center;
+  }
 }
