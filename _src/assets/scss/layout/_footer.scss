@@ -4,12 +4,12 @@
   background-color: $color-footer;
   display: flex;
   flex-direction: column;
-  text-transform: $upAll;
   justify-content: center;
   align-items: center;
   text-align: center;
 
   &__button {
+    transform: translateY(-20px);
     background-color: white;
     height: 45px;
     width: 45px;
@@ -23,16 +23,17 @@
     display: flex;
     font-size: $sizeFooter;
     flex-direction: column;
-    padding-top: 37px;
-    font-stretch: normal;
-    font-style: normal;
+    padding-top: 60px;
+    font-size: $sizeFooter;
+    text-transform: $upAll;
 
-    letter-spacing: normal;
     text-align: center;
     &__list,
     &__contact {
-      padding-left: 15px;
+      padding-bottom: 30px;
       font-size: $sizeFooter;
+      line-height: 1.88;
+      letter-spacing: normal;
       border: olive 2px solid;
     }
     &__item {
@@ -47,6 +48,10 @@
   }
   &__text {
     color: $color-primary;
+    padding-bottom: 45px;
+    line-height: 2.14;
+    letter-spacing: normal;
+    font-size: $sizeSmall;
     &__love--heart {
       color: $color-button;
     }
