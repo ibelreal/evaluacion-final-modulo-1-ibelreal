@@ -1,0 +1,12 @@
+@import "../core/_variables.scss";
+.reasons {
+  &__container {
+    background-color: $color-tips;
+  }
+  &__title {
+    font-size: $sizeTitle;
+    text-transform: $upFirst;
+    padding: 30px 15px;
+    font-weight: $bold;
+  }
+}
