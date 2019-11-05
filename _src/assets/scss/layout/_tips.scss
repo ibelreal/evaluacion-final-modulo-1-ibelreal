@@ -18,6 +18,7 @@
     flex-direction: column;
 
     &--title {
+      width: 290px;
       text-transform: $upFirst;
       font-family: $fontTitle;
     }
@@ -40,5 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media all and (min-width: 768px) {
   }
 }
