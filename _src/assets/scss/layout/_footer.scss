@@ -1,10 +1,11 @@
 @import "../core/_variables.scss";
 
 .footer {
-  padding-left: 15px;
-  color: $color-footer;
+  background-color: $color-footer;
   display: flex;
   flex-direction: column;
+  text-transform: $upAll;
+
   &__button {
     background-color: white;
     height: 45px;
@@ -17,29 +18,33 @@
   }
   &__menu {
     display: flex;
+    font-size: $sizeFooter;
     flex-direction: column;
     padding-top: 37px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.88;
+
     letter-spacing: normal;
     text-align: center;
     &__list,
     &__contact {
+      padding-left: 15px;
+      font-size: $sizeFooter;
       border: olive 2px solid;
-      display: inline-block;
-      list-style: none;
     }
     &__item {
+      display: inline;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__link {
       color: $color-primary;
+      text-decoration: none;
     }
   }
   &__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: $color-primary;
     &__love--heart {
       color: $color-button;
