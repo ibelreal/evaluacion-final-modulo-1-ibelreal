@@ -41,6 +41,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: width 1s;
+
+    &:hover {
+      width: 20px;
+    }
   }
   @media all and (min-width: 768px) {
   }
