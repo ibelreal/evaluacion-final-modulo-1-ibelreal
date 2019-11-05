@@ -1,7 +1,9 @@
 @import "../core/_variables.scss";
 
 .footer {
+  padding-top: 30px;
   background-color: $color-footer;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,32 +11,30 @@
   text-align: center;
 
   &__button {
-    transform: translateY(-20px);
+    bottom: 96%;
+    left: 47%;
     background-color: white;
     height: 45px;
     width: 45px;
     border-radius: 45px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    &__img {
+      margin-top: 10px;
+    }
   }
   &__menu {
     display: flex;
     font-size: $sizeFooter;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 30px;
     font-size: $sizeFooter;
     text-transform: $upAll;
-
     text-align: center;
-    &__list,
-    &__contact {
-      padding-bottom: 30px;
+    &__list {
       font-size: $sizeFooter;
       line-height: 1.88;
       letter-spacing: normal;
-      border: olive 2px solid;
     }
     &__item {
       display: inline;
@@ -48,12 +48,34 @@
   }
   &__text {
     color: $color-primary;
+    padding-top: 30px;
     padding-bottom: 45px;
     line-height: 2.14;
     letter-spacing: normal;
     font-size: $sizeSmall;
     &__love--heart {
       color: $color-button;
+    }
+  }
+  @media all and (min-width: 768px) {
+    border: red 2px solid;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    &__button {
+      bottom: 93%;
+    }
+    &__menu {
+      order: 2;
+      padding-top: 15px;
+      border: red 2px solid;
+      &__item {
+        justify-content: flex-start;
+      }
+    }
+    &__text {
+      order: 1;
+      padding-top: 15px;
     }
   }
 }
