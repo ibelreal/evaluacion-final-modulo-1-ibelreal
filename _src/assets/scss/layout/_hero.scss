@@ -16,10 +16,11 @@
   background-attachment: fixed;
   background-size: 100% 100%;
   &__title {
-    margin-top: 284px;
+    padding-top: 284px;
     color: $color-primary;
     text-transform: $upAll;
     font-size: $sizeHero;
+    font-family: $fontTitle;
   }
   &__text {
     color: $color-primary;
