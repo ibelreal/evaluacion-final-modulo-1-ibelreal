@@ -2,8 +2,7 @@
 
 .tips {
   &__container {
-    padding-top: 30px;
-    padding-left: 15px;
+    padding: 30px 15px;
   }
   &__title {
     text-transform: $upFirst;
@@ -18,19 +17,19 @@
     flex-direction: column;
 
     &--title {
-      width: 290px;
       text-transform: $upFirst;
       font-family: $fontTitle;
+      font-size: 24px;
     }
     &--text {
-      font-size: $sizeText;
+      font-size: 18px;
       line-height: 30px;
       padding-top: 15px;
       color: $color-text;
     }
   }
   &__button {
-    margin: 30px 0 45px 0;
+    margin: 30px 0 15px 0;
     width: 76px;
     height: 45px;
     border-radius: 22.5px;
@@ -44,9 +43,46 @@
     transition: width 1s;
 
     &:hover {
-      width: 20px;
+      width: 450px;
+      background-color: rgb(244, 248, 21);
     }
   }
   @media all and (min-width: 768px) {
+    &__container {
+      padding: 30px 39px;
+    }
+    &__title {
+      padding-bottom: 0;
+    }
+    &__first {
+      &--title {
+        font-size: 26px;
+      }
+      &--text {
+        font-size: 20px;
+        padding-top: 30px;
+      }
+    }
+    &__button {
+      width: 91px;
+      margin: 30px 0 30px 0;
+    }
+  }
+  @media all and (min-width: 1024px) {
+    &__container {
+      padding: 60px 275px;
+    }
+    &__title {
+      font-size: 16px;
+    }
+    &__first {
+      &--title {
+        font-size: 32px;
+      }
+    }
+    &__button {
+      width: 160px;
+      margin: 30px 0 0 0;
+    }
   }
 }
