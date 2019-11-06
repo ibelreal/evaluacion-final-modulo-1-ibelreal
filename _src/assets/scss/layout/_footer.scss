@@ -1,18 +1,17 @@
 @import "../core/_variables.scss";
 
 .footer {
-  padding-top: 30px;
   background-color: $color-footer;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   text-align: center;
-
+  padding: 60px 0 45px;
   &__button {
-    bottom: 96%;
-    left: 47%;
+    top: -3%;
+    right: 46%;
     background-color: $color-primary;
     height: 45px;
     width: 45px;
@@ -25,19 +24,16 @@
   }
   &__menu {
     display: flex;
-    font-size: $sizeFooter;
+    font-size: 16px;
     flex-direction: column;
-    padding-top: 30px;
-    font-size: $sizeFooter;
+    padding-bottom: 30px;
     text-transform: $upAll;
     text-align: center;
     &__list {
       font-size: $sizeFooter;
       line-height: 1.88;
-      letter-spacing: normal;
     }
     &__item {
-      display: inline;
       display: flex;
       justify-content: center;
     }
@@ -48,34 +44,42 @@
   }
   &__text {
     color: $color-primary;
-    padding-top: 30px;
-    padding-bottom: 45px;
-    line-height: 2.14;
-    letter-spacing: normal;
-    font-size: $sizeSmall;
+    font-size: 14px;
     &__love--heart {
       color: $color-button;
     }
   }
   @media all and (min-width: 768px) {
+    padding: 45px 39px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
+
     &__button {
-      bottom: 93%;
+      top: -6%;
     }
     &__menu {
       order: 2;
-      padding-top: 15px;
-      padding-bottom: 45px;
+      padding-bottom: 0;
+      width: 210px;
+      padding-left: 30px;
+
       &__item {
         justify-content: flex-start;
       }
     }
     &__text {
-      text-align: start;
       order: 1;
-      padding-top: 15px;
+      text-align: start;
+      width: 210px;
+    }
+  }
+  @media all and (min-width: 1024px) {
+    &__menu {
+      width: 159px;
+    }
+    &__text {
+      width: 159px;
     }
   }
 }
