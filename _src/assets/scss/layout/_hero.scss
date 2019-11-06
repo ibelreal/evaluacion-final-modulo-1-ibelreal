@@ -1,7 +1,5 @@
 @import "../core/_variables.scss";
 .hero {
-  /* Sizing */
-  height: 568px;
   /* Flexbox */
   display: flex;
   flex-direction: column;
@@ -11,18 +9,22 @@
   text-align: center;
   /* Background styles */
   background: url("../../assets/images/cover.jpg");
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
   &__title {
     padding-top: 284px;
     color: $color-primary;
     text-transform: $upAll;
     font-size: $sizeHero;
     font-family: $fontTitle;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   }
   &__text {
+    font-size: 16px;
+    padding-top: 10px;
     color: $color-primary;
   }
   &__button {
@@ -32,7 +34,33 @@
     border-radius: 22.5px;
     display: flex;
     margin-top: 45px;
+    margin-bottom: 53px;
     justify-content: center;
     align-items: center;
+  }
+  @media all and (min-width: 768px) {
+    &__title {
+      padding-top: 384px;
+      font-size: 80px;
+    }
+    &__text {
+      font-size: 24px;
+      padding-top: 20px;
+    }
+    &__button {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+  }
+  @media all and (min-width: 1024px) {
+    &__title {
+      font-size: 100px;
+    }
+    &__text {
+      padding-top: 0;
+    }
+    &__button {
+      margin-bottom: 13px;
+    }
   }
 }
